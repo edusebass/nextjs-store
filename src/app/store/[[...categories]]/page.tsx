@@ -1,7 +1,7 @@
 interface CategoryProps {
     params:{
         categories: string[]
-        searchParams?: string
+        searchParams? : string
     }
 }
 

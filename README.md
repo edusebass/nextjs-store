@@ -16,6 +16,16 @@ En la sección de "Inicio", los usuarios son recibidos con una interfaz atractiv
 
 La sección de "Productos" muestra una selección de los productos disponibles en la tienda. Cada producto se presenta con una imagen, nombre, precio y cualquier otra información relevante. Los usuarios pueden explorar fácilmente la variedad de productos que ofrece la tienda.
 
+## Funcionalidades adicionales
+
+![Productos](public/readme/error.png)
+
+Esta captura de pantalla muestra un mensaje de error inesperado que puede surgir durante la ejecución de la aplicación. El mensaje de error proporciona información valiosa sobre la naturaleza del problema, lo que facilita la identificación y resolución del mismo.
+
+![Productos](public/readme/404.png)
+
+Esta captura de pantalla muestra un mensaje de 404 para las rutas que no se encuentren.
+
 ## Características Principales
 
 - **Next.js**: La aplicación está construida con [Next.js](https://nextjs.org/), un marco de desarrollo de React que facilita la creación de aplicaciones web rápidas y eficientes.
@@ -32,24 +42,29 @@ Siga estos pasos para ejecutar la aplicación en su máquina local:
    ```bash
    git clone https://github.com/tuusuario/nextjs-store.git
    cd nextjs-store
-   Instalar Dependencias:
+   ```
+2. **Instalar Dependencias:**
+
+   ```bash
+   npm install
    ```
 
-bash
-Copy code
-npm install
-Iniciar la Aplicación:
+3. **Iniciar la Aplicación:**
 
-bash
-Copy code
-npm run dev
-Abra http://localhost:3000 en su navegador para ver la aplicación.
+   ```bash
+   npm run dev
+   ```
 
-Contribuir
+4. **Iniciar la Aplicación:**
+
+   Abra http://localhost:3000 en su navegador para ver la aplicación.
+
+## Contribuir
+
 Si desea contribuir a este proyecto, siga estos pasos:
 
-Forkee este repositorio.
-Cree una nueva rama para su característica (git checkout -b feature/nueva-caracteristica).
-Haga sus cambios y confirme (git commit -m 'Agrega nueva característica').
-Envíe las modificaciones (git push origin feature/nueva-caracteristica).
-Abra una solicitud de extracción.
+1. Forkee este repositorio.
+2. Cree una nueva rama para su característica (git checkout -b feature/nueva-caracteristica).
+3. Haga sus cambios y confirme (git commit -m 'Agrega nueva característica').
+4. Envíe las modificaciones (git push origin feature/nueva-caracteristica).
+5. Abra una solicitud de extracción.

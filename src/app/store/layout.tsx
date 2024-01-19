@@ -1,4 +1,4 @@
-import { getCollections } from "app/services/shopify/collections"
+import { getCollections, getCollectionsProducts } from "app/services/shopify/collections"
 import Link from "next/link"
 import styles from './StoreLayout.module.sass'
 

@@ -1,27 +1,29 @@
 import Link from 'next/link'
-import styles from './Header.module.css'
-import { cookies } from 'next/headers'
 import { validateAccessToken } from 'app/utils/auth/validateAccessToken'
+import styles from './Header.module.sass'
+
 
 export const Header = async () => {
-    const customer = await validateAccessToken()
+  const customer = await validateAccessToken()
 
-    return (
-    <header>
-        <nav>
-            <ul className={styles.Header__list}>
-            <li>
-                <Link href="/">
-                Home
-                </Link>
-            </li>
-            <li>
-                <Link href="/store">
-                Store
-                </Link>
-            </li>
-            </ul>
-            {customer?.firstName ? (<><p>Holaa {customer.firstName} </p></>) : (<Link href="/login">Login</Link>)}
-        </nav>
+  return (
+    <header className={styles.Header}>
+      <nav>
+        <ul className={styles.Header__list}>
+          <li>
+            <Link href="/">
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link href="/store">
+              Store
+            </Link>
+          </li>
+        </ul>
+      </nav>
+      <div className={styles.Header__user}>
+        {customer?.firstName ? (<p>Hola! {customer.firstName}</p>) : (<Link href="/login">Login</Link>)}
+      </div>
     </header>)
 }

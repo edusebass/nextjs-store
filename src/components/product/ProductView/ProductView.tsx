@@ -3,6 +3,7 @@ import { ProductViewItemsOrder } from "./ProductViewItemsOrder";
 import styles from './ProductView.module.sass'
 import { SanitizeHTML } from "app/components/shared/SanitizeHTML";
 
+
 interface ProductViewProps {
     product: ProductType
 }
@@ -30,7 +31,7 @@ export const ProductView = ({ product }: ProductViewProps) => {
             <span className={styles.ProductView__info__price}>
             $ {product.price}
             </span>
-            <ProductViewItemsOrder maxQuantity={product.quantity} />
+            <ProductViewItemsOrder maxQuantity={product.quantity} product/>
         </section>
         </main>
     )

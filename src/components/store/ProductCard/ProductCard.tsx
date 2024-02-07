@@ -6,6 +6,8 @@ interface ProductCardInterface {
     product: ProductType
 }
 
+
+
 export const ProductCard = ({ product }: ProductCardInterface) => {
     return (
         <Link href={`/product/${product.handle}?id=${product.id}`} className={styles.ProductCard__link}>

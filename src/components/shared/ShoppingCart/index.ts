@@ -1,1 +1,3 @@
-export {ShopingCart } from './ShoppingCart'
+import ShopingCart  from './ShoppingCart'
+
+export default ShopingCart

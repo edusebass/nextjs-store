@@ -8,11 +8,15 @@ export const NewAccountForm = () => {
   const [errors, setErrors] = useState<string[]>([]);
   const [loading, setLoading] = useState<boolean>(false);
 
-  const handleSubmit = async (event) => {
-    event.preventDefault()
-    const formData = new FormData(event.target)
+  const handleSubmit = async (event: {
+    target: any;
+    preventDefault: () => void;
+  }) => {
+    event.preventDefault();
+    const formData = new FormData(event.target);
     await handleCreateUser(formData)
   }
+
   return (
     <div className={styles.NewAccountForm}  >
       <h1 className={styles.NewAccountForm__title}>New Account</h1>
@@ -34,4 +38,4 @@ export const NewAccountForm = () => {
       }
     </div>
   );
-} 
+}

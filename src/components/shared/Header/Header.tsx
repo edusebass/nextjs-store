@@ -27,6 +27,11 @@ export const Header = async () => {
                 Store
                 </Link>
             </li>
+            <li>
+                <Link href="/chat">
+                Chat
+                </Link>
+            </li>
             </ul>
         </nav>
         <div className={styles.Header__user}>
